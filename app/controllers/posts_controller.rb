@@ -1,7 +1,6 @@
 class PostsController < ApplicationController
   def index
-    @content_first = "This is some sample text for the Ruby App"
-    @content_second = "Find me in app/views/posts/index.html.erb"
+    @posts = Post.all
   end
 
   def new
@@ -13,7 +12,7 @@ class PostsController < ApplicationController
   end
 
   def show
-
+    @post = Post.find(params[:id])
   end
 
   def edit
