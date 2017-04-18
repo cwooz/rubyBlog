@@ -12,6 +12,10 @@ class PostsController < ApplicationController
 
   end
 
+  def show
+
+  end
+
   def edit
 
   end
@@ -19,11 +23,7 @@ class PostsController < ApplicationController
   def update
 
   end
-
-  def show
-
-  end
-
+  
   def destroy
 
   end
